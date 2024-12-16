@@ -1,0 +1,37 @@
+#Script para plot da função y² = x³+2x+2 (mod 17), curva eliptica
+
+set xrange [-22:22]
+set yrange [-22:22]
+set xlabel "x"
+set ylabel "f(x)"
+
+set title "Curva eliptica y² = x³+2x+2 (mod 17) e seus pontos com suas retas"
+set zeroaxis
+set samples 100000
+set key bottom left
+
+set label 1 "G1 = (5,1)" at 5, 1 offset 1, 0 
+set label 2 "G2 = (6,3)" at 6, 3 offset 1, 0
+set label 3 "G3 = (10,6)" at 10, 6 offset 1, 0
+set label 4 "G4 = (3,1)" at 3, 1 offset 1, 0
+set label 5 "G5 = (9,16)"  at 9, 16 offset 1, 0
+set label 6 "G6 = (16,13)" at 16, 13 offset 1, 0
+set label 7 "G7 = (0,6)" at 0, 6 offset 1, 0
+set label 8 "G8 = (13,7)" at 13, 7 offset 1, 0
+set label 9 "G9 = (7,6)" at 7, 6 offset 1, 0
+set label 10 "G10 = (7,11)" at 7, 11 offset 1, 0
+set label 11 "G11 = (13,10)" at 13, 10 offset 1, 0
+set label 12 "G12 = (0,11)" at 0, 11 offset 1, 0
+set label 13 "G13 = (16,4)" at 16, 4 offset 1, 0
+set label 14 "G14 = (9,1)" at 9, 1 offset 1, 0
+set label 15 "G15 = (3,16)" at 3, 16 offset 1, 0
+set label 16 "G16 = (10,11)" at 10, 11 offset 1, 0
+set label 17 "G17 = (6,14)" at 6, 14 offset 1, 0
+set label 18 "G18 = (5,16)" at 5, 16 offset 1, 0
+
+f(x) = (x**3 + 2*x + 2 >= 0) ? sqrt(x**3 + 2*x + 2) : 1/0
+g(x) = (x**3 + 2*x + 2 >= 0) ? -sqrt(x**3 + 2*x + 2) : 1/0
+
+plot f(x) w l lw 3 lc rgb "blue" t "sqrt(x**3 + 2*x + 2)", \
+	g(x) w l lw 3 lc rgb "blue" t "-sqrt(x**3 + 2*x + 2)", \
+	"pontosCurvaElipticaEspecifica" u 1:2 w p pt 7 lc rgb "black" t "pontos"

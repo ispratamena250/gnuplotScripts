@@ -1,0 +1,18 @@
+# Script para exibir y² = x³ + 2x + 2 com destaque na região perto da origem
+
+set xrange [-10:10]       # Define o intervalo do eixo X
+set yrange [-10:10]       # Define o intervalo do eixo Y
+set xlabel "x"          # Rótulo do eixo X
+set ylabel "y"          # Rótulo do eixo Y
+set title "Gráfico de y² = x³ + 2x + 2"  # Título do gráfico
+set zeroaxis            # Desenha os eixos X e Y
+set samples 100000        # Aumenta o número de amostras para uma renderização suave
+
+# Define a função somente onde y² >= 0
+g(x) = (x**3 + 2*x + 2 >= 0) ? sqrt(x**3 + 2*x + 2) : 1/0  # Ramo superior
+h(x) = (x**3 + 2*x + 2 >= 0) ? -sqrt(x**3 + 2*x + 2) : 1/0 # Ramo inferior
+
+# Plota os dois ramos da curva
+plot g(x) with lines title "y = +√(x³ + 2x + 2)", \
+     h(x) with lines title "y = -√(x³ + 2x + 2)"
+

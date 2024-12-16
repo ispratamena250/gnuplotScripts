@@ -1,0 +1,3 @@
+#Script para plotagem dos pontos da curva eliptca específica
+
+plot "pontosCurvaElipticaEspecifica" u 1:2 w p pt 7 lc rgb "black" 

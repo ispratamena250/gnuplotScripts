@@ -1,0 +1,6 @@
+set xlabel "x"
+set ylabel "f(x)"
+
+f(x) = x**2
+
+plot f(x) with lines title "Teste de funcao quadratica"

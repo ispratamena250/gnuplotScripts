@@ -1,0 +1,47 @@
+reset
+
+set key off
+
+set label 1 '2^n' at 10.5,2600 center tc ls 1
+set label 2 'n^3' at 14,2300   center tc ls 2
+set label 3 'n^2' at 25, 530   center tc ls 3
+set label 4 '100 n' at 23,2200 rotate by 35 center tc ls 4
+set label 5 '500 sqrt(n)' at 17,2150 rotate by  20 center tc ls 5
+set label 6 '400 log(n)'  at 25,1400 rotate by  5 center tc ls 6
+
+f(n) = 2**n
+g(n) = n**3
+h(n) = n**2
+r(n) = 100*n
+s(n) = 500*sqrt(n)
+t(n) = 400*log(n)
+
+plot [n=1:40][0:3000] f(n) w l ls 1,\
+			g(n) w l ls 2,\
+			h(n) w l ls 3,\
+			r(n) w l ls 4,\
+			s(n) w l ls 5,\
+			t(n) w l ls 6
+			
+
+pause -1
+
+reset
+set key off
+h(n) = n*n
+u(n) = n*n+100*n+500
+set arrow from 93.6,18135 to 96.7,10037 heads
+plot [n=1:100] u(n) w l ls 1,\
+			   h(n) w l ls 2
+
+pause -1
+
+reset
+set key off
+h(n) = n*n
+u(n) = n*n+100*n+500
+set label 1 font ",14" 'n^2'         at 8227,6.4e7     center tc ls 1
+set label 2 'n^2+100*n+500'  rotate by  33 at 7200,5.51e7     center tc ls 2
+plot [n=1:10000] u(n) w l ls 2, h(n) w l ls 1
+	
+pause -1

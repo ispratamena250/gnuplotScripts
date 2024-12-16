@@ -1,0 +1,51 @@
+#Script para estudo de Equações Diofantinas
+
+set xlabel "x [Equações Diofantinas só terão solução se gdc(a,b) = 1]"
+set ylabel "f(x)"
+#set xrange [-5:5]
+#set yrange [-5:5]
+set xrange [-10:10]
+set yrange [-10:10]
+set xtics 1 #Para definir os intervalos no eixo x
+set ytics 1 #Para definir os intervalos no eixo y
+set title "Diversas equações diofantinas ou não [aX + bY = 1]" 
+
+#set mxtics 1 #Para alterar o intervalo de grids
+#set mytics 1
+set grid
+#set grid mxtics mytics #Para setar um intervalo de grid alterado
+
+set object 1 circle at 0,0 size 0.025 fillstyle solid border lc rgb "#232323" fillcolor rgb "#232323" #Origem
+set object 2 circle at -2,3 size 0.05 fillstyle solid border lc rgb "#d22323" fillcolor rgb "#d22323" #Para desenhar um objeto, nesse caso, círculo
+set object 3 circle at 3,-4 size 0.05 fillstyle solid border lc rgb "#d22323" fillcolor rgb "#d22323"
+#set object 4 circle at 38,-9 size 0.25 fillstyle solid border lc rgb "#e1007d" fillcolor rgb "#e1007d" #Ponto achado na solução 
+set object 5 circle at 3,-2 size 0.025 fillstyle solid border lc rgb "black" fillcolor rgb "black" #Outro ponto achado na "solução" 
+
+set arrow 1 from 3,-10 to 3,-4 nohead linetype 0
+set arrow 2 from -10,-4 to 3,-4 nohead linetype 0
+set arrow 3 from -2,-10 to -2,3 nohead linetype 0
+set arrow 4 from -10,3 to -2,3 nohead linetype 0
+
+f(x) = (1 - 7*x)/5
+g(x) = (1 - 10*x)/15
+h(x) = (1 - 35*x)/21
+i(x) = (1 - 19*x)/7
+j(x) = (1 - 343*x)/218
+k(x) = (1 - 18*x)/30
+l(x) = (1 - 27*x)/20
+m(x) = (11 - 7*x)/5
+n(x) = (1 - 223*x)/58 #Importante
+o(x) = (1 - 9*x)/4 #Importante
+p(x) = (1 - 23*x)/97 #Existe mais de uma solução que não seja (38, -9)?
+q(x) = (1 - 35*x)/49
+
+plot f(x) w l lw 1 lc rgb "#d22323" t "7X + 5Y = 1", \
+	g(x) w l lw 1 lc rgb "#1e64af" t "10X + 15Y = 1", \
+	h(x) w l lw 1 lc rgb "#d26e96" t "35X + 21Y = 1", \
+	i(x) w l lw 1 lc rgb "#a0c382" t "19X + 7Y = 1", \
+	j(x) w l lw 1 lc rgb "#f5dc50" t "343X + 218Y = 1", \
+	k(x) w l lw 1 lc rgb "#646464" t "18X + 30Y = 1", \
+	l(x) w l lw 1 lc rgb "#968c41" t "27X + 20Y = 1", \
+	m(x) w l lw 1 lc rgb "#e1b496" t "7X + 5Y = 11", \
+	n(x) w l lw 1 lc rgb "#232323" t "223X + 58Y = 1", \
+	o(x) w l lw 1 lc rgb "#232323" t "9X + 4Y = 1", p(x) w l lw 1 lc rgb "#e1007d" t "23X + 97Y = 1", q(x) w l lw 4 lc rgb "black" t "35X + 49Y = 1"

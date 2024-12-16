@@ -1,0 +1,14 @@
+#Script de treino sobre o capítulo 7 do livro base
+
+set xlabel "x"
+set ylabel "f(x) e g(x)"
+set xrange [-3:50]
+set yrange [-50000:50000]
+set title "Script exemplo"
+
+set key bottom right
+
+f(x) = x**4/(tan(x) * cos(log(x) - x))
+g(x) = x**3
+
+plot f(x) with lines linewidth 3 lc rgb "#fa8072" title "f(x) = x**4/(tan(x) * cos(log(x) - x))", g(x) with lines linewidth 3 lc rgb"blue" title "g(x) = x**2"

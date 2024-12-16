@@ -1,0 +1,13 @@
+#Script para plotar função sqrt(2)
+
+set xlabel "x"
+set ylabel "f(x)"
+
+set xrange [0:10]
+set yrange [0:10]
+
+set title "Raiz quadrada de dois"
+
+f(x) = sqrt(x)
+
+plot f(x) w l lc "red" title "sqrt(2)"

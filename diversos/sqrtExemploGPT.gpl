@@ -1,0 +1,13 @@
+# Script para plotar uma função com sqrt(2)
+set xlabel "x"
+set ylabel "f(x)"
+
+set xrange [0:10]
+set yrange [0:10]
+
+set title "Função envolvendo sqrt(2)"
+
+f(x) = x * sqrt(2)
+
+plot f(x) with lines lc "red" title "f(x) = x * √2"
+

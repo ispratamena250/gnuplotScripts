@@ -1,0 +1,20 @@
+#Script de treino sobre a ferramenta de múltiplos eixos no Gnuplot
+
+set xlabel "Primeiro eixo x"
+set ylabel "sin(x)"
+set yrange [-5:5]
+
+#set x2tics (1, 2, 4, 6, 8, 10)  #Ativa o segundo eixo x com os tics do parenteses
+set x2tics 2 #Ativa o segundo eixo x com tics de 2 em 2
+set y2tics 1 #Ativa o segundo eixo y com tics de 1 em 1
+set x2label "Segundo eixo x"
+set y2label "cos(x)"
+set x2tics rotate by -45 #Rotaciona 
+#unset x2tics #Desativa o segundo eixo x
+#unset y2tics #Desatica o segundo eixo y
+set title "Múltiplos eixos"
+
+f(x) = sin(x)
+g(x) = cos(x)
+
+plot f(x) with lines lc rgb "red" title "f(x) = sin(x)" axes x1y1,  g(x) with lines lc rgb "blue" title "g(x) = cos(x)" axes x1y2

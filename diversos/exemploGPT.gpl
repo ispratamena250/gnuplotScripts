@@ -1,0 +1,10 @@
+set xrange [1.1:100]
+set yrange [-10:10]
+set xlabel "x"
+set ylabel "f(x)"
+set title "Plot of (e^x + sin(2x))/ln(x)"
+
+f(x) = (exp(x) + sin(2*x)) / log(x)
+
+plot f(x) with lines title "f(x) = (e^x + sin(2x))/ln(x)"
+

@@ -1,0 +1,17 @@
+set xrange [0:10]
+set yrange [-1.5:1.5]
+
+# Define o rótulo de anotação
+set label "Máximo da função" at 3, 1
+
+# Opcional: estilo do rótulo
+set label font ",12" textcolor rgb "blue" 
+
+# Configuração dos eixos
+set xlabel "x"
+set ylabel "y"
+set title "Gráfico com Anotação"
+
+# Plota a função com a anotação
+plot sin(x) title "sin(x)"
+

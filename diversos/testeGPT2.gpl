@@ -1,0 +1,20 @@
+set xrange [0:10]
+set yrange [-1:1]
+
+# Ajuste as margens para deixar espaço para anotações
+set lmargin at screen 0.1   # margem esquerda
+set rmargin at screen 0.9   # margem direita
+set tmargin at screen 0.85  # margem superior
+set bmargin at screen 0.15  # margem inferior
+
+# Adiciona uma anotação próxima ao eixo X, mas fora do gráfico
+set label "Anotação fora do plano cartesiano" at screen 0.5, 0.9 center
+
+# Configuração dos eixos e título
+set xlabel "x"
+set ylabel "y"
+set title "Gráfico com anotação fora do plano cartesiano"
+
+# Plota a função
+plot sin(x) title "sin(x)"
+

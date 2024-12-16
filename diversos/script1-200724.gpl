@@ -1,0 +1,10 @@
+#Script para plot da função f(x) = sen(1/x) no intervalo (0,1]. Foi retirada do livro Cálculo Vol. 1, 12º ed - Thomas, página 214
+
+set xrange [-1:1]
+set yrange [-2:2]
+set xlabel "x"
+set ylabel "f(x)"
+set title "Função exemplo: máximos e mínimos locais"
+f(x) = sin(1/x)
+
+plot f(x) with lines lc rgb 'blue' title "f(x) = sin(1/x)"

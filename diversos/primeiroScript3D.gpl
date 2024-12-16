@@ -1,0 +1,9 @@
+#Primeira tentativa de pltar uma função tridimensional no gnuplot. No caso, um paraboloide
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "f(x,y)"
+
+f(x,y) = x**2 + y**2
+
+plot f(x,y) with lines title "Paraboloide circular"
