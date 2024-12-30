@@ -1,0 +1,24 @@
+# Configurações básicas
+set style fill solid 1.0 border -1   # Preenchimento sólido e sem bordas
+set boxwidth 0.8                    # Largura das barras
+set style line 1 lc rgb "red"       # Cor vermelha para as barras
+
+# Configurações do gráfico
+set title "Gráfico de Barras"        # Título do gráfico
+set xlabel "Categorias"              # Rótulo do eixo X
+set ylabel "Valores"                 # Rótulo do eixo Y
+set xrange [0.5:5.5]                 # Intervalo do eixo X para espaçamento
+set yrange [0:*]                     # Ajuste automático do eixo Y
+
+# Dados inline
+$dados <<EOD
+1 10
+2 15
+3 5
+4 8
+5 12
+EOD
+
+# Plotar os dados com barras
+plot $dados using 1:2 with boxes ls 1 notitle
+
