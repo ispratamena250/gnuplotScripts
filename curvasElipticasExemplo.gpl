@@ -20,14 +20,26 @@ i(x) = (x**3 - 4*x >= 0) ? sqrt(x**3 - 4*x) : 1/0
 il(x) = (x**3 - 4*x >= 0) ? -sqrt(x**3 - 4*x) : 1/0
 j(x) = (x**3 - x >= 0) ? sqrt(x**3 - x) : 1/0
 jl(x) = (x**3 - x >= 0) ? -sqrt(x**3 - x) : 1/0 
+k(x) = (x**3 - 3*x + 2 >= 0) ? sqrt(x**3 - 3*x + 2) : 1/0
+kl(x) = (x**3 - 3*x + 2 >= 0) ? -sqrt(x**3 - 3*x + 2) : 1/0
+l(x) = (x**3 - 0.48*x + 0.128 >= 0) ? sqrt(x**3 - 0.48*x + 0.128) : 1/0
+ll(x) = (x**3 - 0.48*x + 0.128 >= 0) ? -sqrt(x**3 - 0.48*x + 0.128) : 1/0
+m(x) = (x**3 >= 0) ? sqrt(x**3) : 1/0
+ml(x) = (x**3 >= 0) ? -sqrt(x**3) : 1/0
 
-plot f(x) w l lw 2lc rgb "#1e64af" t "y^2 = x^3 - 1", \
-	fl(x) w l lw 2 lc rgb "#1e64af" notitle, \
-	g(x) w l lw 2 lc rgb "#b91941" t "y^2 = x^3 + 1", \
-	gl(x) w l lw 2 lc rgb "#b91941" notitle, \
-	h(x) w l lw 2 lc rgb "#ff7d0a" t "y^2 = x^3 - 3x + 3", \
-	hl(x) w l lw 2 lc rgb "#ff7d0a" notitle, \
-	i(x) w l lw 2 lc rgb "#05d7a0" t "y^2 = x^3 - 4x", \
-	il(x) w l lw 2 lc rgb "#05d7a0" notitle, \
-	j(x) w l lw 2 lc rgb "#968c41" t "y^2 = x^3 - x", \
-	jl(x) w l lw 2 lc rgb "#968c41" notitle
+plot f(x) w l lw 1 lc rgb "#1e64af" t "y^2 = x^3 - 1", \
+	fl(x) w l lw 1 lc rgb "#1e64af" notitle, \
+	g(x) w l lw 1 lc rgb "#b91941" t "y^2 = x^3 + 1", \
+	gl(x) w l lw 1 lc rgb "#b91941" notitle, \
+	h(x) w l lw 1 lc rgb "#ff7d0a" t "y^2 = x^3 - 3x + 3", \
+	hl(x) w l lw 1 lc rgb "#ff7d0a" notitle, \
+	i(x) w l lw 1 lc rgb "#05d7a0" t "y^2 = x^3 - 4x", \
+	il(x) w l lw 1 lc rgb "#05d7a0" notitle, \
+	j(x) w l lw 1 lc rgb "#968c41" t "y^2 = x^3 - x", \
+	jl(x) w l lw 1 lc rgb "#968c41" notitle, \
+  k(x) w l lw 4 lc rgb "#e1007d" t "singular y^2 = x^3 - 3x + 2", \
+  kl(x) w l lw 4 lc rgb "#e1007d" notitle, \
+  l(x) w l lw 4 lc rgb "#e1a03c" t "singular y^2 = x^3 - 0.48x + 0.128", \
+  ll(x) w l lw 4 lc rgb "#e1a03c" notitle, \
+  m(x) w l lw 4 lc rgb "#64508c" t "singluar y^2 = x^3", \
+  ml(x) w l lw 4 lc rgb "#64508c" notitle
