@@ -1,0 +1,14 @@
+#Scrip para plotagem do exemplo 4
+
+set xlabel "(x, y)"
+set ylabel "t"
+set xrange [-5:5]
+set yrange [-5:5]
+set trange [0:4]
+
+set title "x=sqrt(t) and y=t"
+
+set parametric
+set zeroaxis
+
+plot sqrt(t), t title "y = x^2"

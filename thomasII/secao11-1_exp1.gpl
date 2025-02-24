@@ -1,0 +1,42 @@
+#Script para plotagem do exemplo 1 da seção 11.1 do livro de cálculo 3: Thomas volume 2
+
+set xlabel "(x,y)"
+set ylabel "t"
+
+set yrange [-5:15]
+set xrange [-5:15]
+set trange [-2:4] #Define o range do parametro t
+
+set zeroaxis
+set parametric #Habilita o modo paramétrico
+set title "Exemplo 1"
+
+set label 1 "(9,-2)" at 9, -2 offset 1, 0
+set label 2 "(4,-1)" at 4, -1 offset 1, 0
+set label 3 "(1,0)" at 1, 0 offset 1, 0
+set label 4 "(0,1)" at 0, 1 offset 1, 0
+set label 5 "(1,2)" at 1, 2 offset 1, 0
+set label 6 "(4,3)" at 4, 3 offset 1, 0
+set label 7 "(9,4)" at 9, 4 offset 1, 0
+
+set label 8 "-3" at 0, -3 
+set label 9 "-2" at 0, -2 
+set label 10 "-1" at 0, -1 
+set label 11 "0" at 0, 0 
+set label 12 "1" at 0, 1 
+set label 13 "2" at 0, 2 
+set label 14 "3" at 0, 3 
+
+#Dados inline(t, x, y):
+$dados <<EOD
+-3	9	-2
+-2	4	-1
+-1	1	0
+0	0	1
+1	1	2
+2	4	3
+3	9	4
+EOD
+
+plot $dados u 2:3 w p pt 7 ps 2 lc rgb "red" notitle, \
+	t**2 - 2*t + 1, t title "x = y^2 - 2y + 1" \
