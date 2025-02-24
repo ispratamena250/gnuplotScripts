@@ -1,0 +1,1 @@
+splot "dados1.dat" w l lc rgb "red"
