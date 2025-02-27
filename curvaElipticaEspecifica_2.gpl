@@ -1,13 +1,13 @@
 #Script para plotagem da curva eliptica y² = x³ + 4x + 4
 
-set xlabel "x"
-set ylabel "f(x)"
+set xlabel "x" offset 60, 21
+set ylabel "f(x)" offset 50, -5
 
 set xrange [-3:16]
 set yrange [-16:16]
 
 set zeroaxis
-set title "Curva elíptica específica"
+#set title "Curva elíptica específica"
 set samples 100000
 
 set label 1 "p1=(0,2)" at 0, 2 offset 1, 0 

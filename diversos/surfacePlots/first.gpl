@@ -1,1 +1,15 @@
+set contour base
+set hidden3d
+set isosamples 50, 50
+#set trianglepattern 4
+set surface
+set view 60, 30
+set dgrid3d 30, 30
+set pm3d at b
+set cntrparam levels auto 5
+
 splot [-2:2][-2:2] exp(-(x**2 + y**2))*cos(x/4)*sin(y)*cos(2*(x**2+y**2))
+
+#splot sin(x) * cos(y)
+
+#splot sin(x) * tan(y)
