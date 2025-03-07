@@ -1,0 +1,19 @@
+#Script para plotagem do gráfico de um cone
+
+set xrange [-20:20]
+set yrange [-20:20]
+set zrange [-20:20]
+set title "Generic cone f(x, y, z) = x² + y² + z²"
+
+set contour base
+#set hidded3d 
+set isosamples 50, 50
+set surface
+set dgrid3d 30, 30
+
+#Dados inline:
+$dados <<EOD
+3	0	4
+EOD
+
+splot sqrt(x**2 + y**2) notitle, -sqrt(x**2 + y**2) notitle, $dados w p lc rgb "red" pt 7 ps 2 title "point (3, 0, 4)"

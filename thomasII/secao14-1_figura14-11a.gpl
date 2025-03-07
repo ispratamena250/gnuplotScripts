@@ -1,0 +1,13 @@
+set xrange [-5:5]  # Define o intervalo de x
+set yrange [-5:5]  # Define o intervalo de y
+set zrange [-3:3]  # Ajusta o intervalo do eixo z
+set title "sin(x) + 2sin(y)"
+
+set xyplane 0
+
+set contour base
+set isosamples 50, 50
+set surface 
+set hidden3d
+
+splot sin(x) + 2*sin(y) notitle

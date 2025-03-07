@@ -1,0 +1,10 @@
+set contour base
+set isosamples 50, 50
+set surface
+set dgrid3d 30, 30
+
+f(x,y) = 100 - x**2 - y**2
+g(x,y) = 51
+h(x,y) = 75
+
+splot f(x,y) notitle, g(x,y) notitle, h(x,y) notitle

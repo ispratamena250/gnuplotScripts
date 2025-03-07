@@ -1,0 +1,14 @@
+set xrange [-50:100]
+set yrange [0:1500] # t -> y
+set zrange [-10000:10000]
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "t"
+
+set contour base
+set isosamples 50, 50
+set surface
+set dgrid3d 30, 30
+
+splot cos(1.7e-2 * y - 0.2*x) * exp(-0.2*x) w l lw 2 t "w(x,t)"
