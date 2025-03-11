@@ -1,0 +1,17 @@
+#Plotando f(x,y) = (x**4)/(x**4 + y**2)
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "f(x,y)"
+
+set xrange [-1:1]
+set yrange [-1:1]
+set zrange [-1:1]
+
+set title "f(x,y) = (x**4)/(x**4 + y**2)"
+
+set surface
+set hidden3d
+set isosamples 50, 50
+
+splot (x**4)/(x**4 + y**2) notitle

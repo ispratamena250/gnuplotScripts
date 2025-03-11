@@ -1,0 +1,17 @@
+#Script para plotagem da função f(x,y) = y^2
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "z"
+
+set xrange [-2:2]
+set yrange [-2:2]
+set zrange [-2:2]
+
+set contour base
+set isosamples 50, 50
+set surface
+
+set title "f(x,y) = y²"
+
+splot y**2 w l notitle

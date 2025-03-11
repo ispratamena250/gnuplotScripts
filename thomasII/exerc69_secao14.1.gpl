@@ -1,0 +1,17 @@
+#Plotando f(x,y) = xsin(y/2) + ysen(2x)
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "z"
+
+set xrange [0:5*pi]
+set yrange [0:5*pi]
+
+set title "f(x,y) = xsin(y/2) + ysen(2x), 0<=x<=5*pi, 0<=y<=5*pi"
+
+set isosamples 50, 50
+set hidden3d
+set contour base
+set surface 
+
+splot x*sin(y/2) + y*sin(2*x) notitle 

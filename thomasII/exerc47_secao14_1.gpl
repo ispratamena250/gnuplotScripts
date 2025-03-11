@@ -1,0 +1,16 @@
+#Script para plotagem da função f(x,y) = sqrt(x² + y² + 4)
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "z"
+
+set xrange [-30:30]
+set yrange [-30:30]
+set zrange [-30:30]
+
+set isosamples 50, 50
+set surface
+set hidden3d
+set dgrid3d 30, 30
+
+splot sqrt(x**2 + y**2 + 4) notitle, -sqrt(x**2 + y**2 + 4) notitle

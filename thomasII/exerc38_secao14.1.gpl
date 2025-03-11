@@ -1,0 +1,17 @@
+#Script para plotar a função f(x,y) = sqrt(x)
+
+set xrange [-30:30]
+set yrange [-30:30]
+set zrange [-30:30]
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "z"
+
+set title "f(x,y) = sqrt(x)"
+
+set surface
+set isosamples 50, 50
+set hidden3d
+
+splot sqrt(x) notitle, -sqrt(x) notitle
