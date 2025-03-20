@@ -1,6 +1,6 @@
 #Script para estudo de Equações Diofantinas
 
-set xlabel "x [Equações Diofantinas só terão solução se gdc(a,b) = 1]"
+set xlabel "x [Equacoes Diofantinas so terao solucao se gdc(a,b) = 1]"
 set ylabel "f(x)"
 #set xrange [-5:5]
 #set yrange [-5:5]
@@ -8,6 +8,7 @@ set xrange [-10:10]
 set yrange [-10:10]
 set xtics 1 #Para definir os intervalos no eixo x
 set ytics 1 #Para definir os intervalos no eixo y
+set zeroaxis
 set title "Diversas equações diofantinas ou não [aX + bY = 1]" 
 
 #set mxtics 1 #Para alterar o intervalo de grids
