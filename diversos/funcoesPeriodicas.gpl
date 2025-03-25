@@ -1,0 +1,21 @@
+#Funcoes periodicas
+
+set xlabel "x"
+set ylabel "f(x)"
+
+set title "Funcoes Periodicas"
+set key left top
+
+set zeroaxis
+
+e(x) = x 
+f(x) = x + 1
+g(x) = x + 2
+h(x) = x + 3
+i(x) = x + 4
+j(x) = x + 5
+k(x) = x + 6
+l(x) = x - 1
+m(x) = x - 2
+
+plot e(x) w l, f(x) w l, g(x) w l, h(x) w l, i(x) w l, j(x) w l, k(x) w l, l(x) w l, m(x) w l
