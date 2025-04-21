@@ -1,0 +1,13 @@
+#Script: plotar_blocos.gnuplot
+
+reset
+set title "Plotando blocos com cores diferentes"
+set xlabel "Eixo X"
+set ylabel "Eixo Y"
+set terminal wxt
+set key outside
+
+# Plot com estilos definidos diretamente no comando
+ plot 'dados_testeBlocoDados.txt' index 0 using 1:2 with linespoints lc rgb "red"   lt 1 lw 2 pt 7 ps 1.5 title "Bloco 1", \
+      'dados_testeBlocoDados.txt' index 1 using 1:2 with linespoints lc rgb "blue"  lt 1 lw 2 pt 7 ps 1.5 title "Bloco 2", \
+      'dados_testeBlocoDados.txt' index 2 using 1:2 with linespoints lc rgb "green" lt 1 lw 2 pt 7 ps 1.5 title "Bloco 3"       
