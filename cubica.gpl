@@ -1,0 +1,14 @@
+#Plotting a cubic curve
+
+set xlabel "x"
+set ylabel "f(x)"
+
+set title "Curva cúbica"
+
+set view map
+set contour base
+set cntrparam levels discrete 0
+
+set zeroaxis
+
+splot x**3 + x**2*y + x*y**2 + y**3 + x**2 x*y y**2 x + y + 3 notitle

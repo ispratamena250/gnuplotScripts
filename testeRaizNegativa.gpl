@@ -1,0 +1,8 @@
+a = 1
+b = 0
+
+set xrange [-10:10]
+set yrange [-10:10]
+set zeroaxis
+
+plot sqrt(a*x+b) notitle, -sqrt(a*x+b) notitle
