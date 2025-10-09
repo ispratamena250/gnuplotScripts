@@ -1,0 +1,13 @@
+set xrange [-10:10]
+set yrange [-5: 10]
+
+set xlabel "x"
+set ylabel "f(x)"
+
+set zeroaxis
+
+set title "Curva cúbica exemplo"
+
+f(x) = sgn(1 - x**3) * abs(1 - x**3)**(1.0/3.0)
+
+plot f(x) w l title "(1 - x^3)^(1/3)"

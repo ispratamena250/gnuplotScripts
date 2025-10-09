@@ -1,0 +1,24 @@
+#Script para plotar a curva cúbica de Selmer: RPOEC pg. 11
+
+set xrange [-30:30]
+set yrange [-30:30]
+set zrange [-30:30]
+
+set xlabel "x"
+set ylabel "y"
+set zlabel "z"
+
+set zeroaxis
+set title "Selmer"
+
+set label 1 "origin" at 0,0,0 offset 1, 0
+
+#Dados inline:
+$dados <<EOD
+0	0	0
+EOD
+
+f(x,y) = sgn((-3*x**3 - 4*y**3)/5) * abs(((-3*x**3 - 4*y**3)/5)**(1.0/3.0))
+
+splot $dados w p pt 7 ps 2 lc rgb "blue" notitle, \
+	f(x,y) w l lw 2 lc rgb "red" title "((-3*x^3 - 4*y^3)/5)^(1/3)"
