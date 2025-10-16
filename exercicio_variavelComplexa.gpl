@@ -1,0 +1,25 @@
+#Script de auxílio para o exercício 04 do livro Complex Variable and Aplications, Brown Churchill, 6 ed, pg. 102
+
+set xrange [-5:5]
+set yrange [-5:5]
+
+set xlabel "x"
+set ylabel "f(x)"
+
+set zeroaxis
+
+set title "Curva y = x^3"
+
+set label 1 "z=-1-i -> (-1, -1)" at -1, -1 offset 1, 0
+set label 2 "z=1+i -> (1, 1)" at 1, 1 offset 1, 0
+
+#Dados inline:
+$dados <<EOD
+-1	-1
+1	1
+EOD
+
+f(x) = x**3
+
+plot $dados u 1:2 w p pt 7 ps 2 notitle, \
+	f(x) w l lw 2 lc rgb "blue" t "y = x^3"
