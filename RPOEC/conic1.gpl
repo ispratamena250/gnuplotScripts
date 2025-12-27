@@ -1,0 +1,24 @@
+#Plot for conic x^2 + y^2 = 6 from ex 1.7a 
+
+set xrange[-5:5]
+set yrange[-5:5]
+set xlabel "x"
+set ylabel "f(x)"
+set xzeroaxis
+set yzeroaxis
+set title "Conic x^2 + y^2 = 6"
+set size square
+set samples 10000
+
+#Dados inlne:
+$dados <<EOD
+0	2.44
+2.44	0
+EOD
+
+f(x) = sqrt(6 - x**2) 
+g(x) = -sqrt(6 - x**2)
+
+plot $dados u 1:2 w p pt 7 ps 2 lc rgb "blue" title "extremos", \
+	f(x) w l lw 4 lc rgb "red" notitle, \
+	g(x) w l lw 4 lc rgb "red" notitle
