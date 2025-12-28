@@ -1,61 +1,64 @@
-f1(x) = (-x)**(1/1), /\ 
-g1(x) = -((-x)**(1/1)), /\ 
-f2(x) = (-x)**(1/2), /\ 
-g2(x) = -((-x)**(1/2)), /\ 
-f3(x) = (-x)**(1/3), /\ 
-g3(x) = -((-x)**(1/3)), /\ 
-f4(x) = (-x)**(1/4), /\ 
-g4(x) = -((-x)**(1/4)), /\ 
-f5(x) = (-x)**(2/1), /\ 
-g5(x) = -((-x)**(2/1)), /\ 
-f6(x) = (-x)**(2/2), /\ 
-g6(x) = -((-x)**(2/2)), /\ 
-f7(x) = (-x)**(2/3), /\ 
-g7(x) = -((-x)**(2/3)), /\ 
-f8(x) = (-x)**(2/4), /\ 
-g8(x) = -((-x)**(2/4)), /\ 
-f9(x) = (-x)**(3/1), /\ 
-g9(x) = -((-x)**(3/1)), /\ 
-f10(x) = (-x)**(3/2), /\ 
-g10(x) = -((-x)**(3/2)), /\ 
-f11(x) = (-x)**(3/3), /\ 
-g11(x) = -((-x)**(3/3)), /\ 
-f12(x) = (-x)**(3/4), /\ 
-g12(x) = -((-x)**(3/4)), /\ 
-f13(x) = (-x)**(4/1), /\ 
-g13(x) = -((-x)**(4/1)), /\ 
-f14(x) = (-x)**(4/2), /\ 
-g14(x) = -((-x)**(4/2)), /\ 
-f15(x) = (-x)**(4/3), /\ 
-g15(x) = -((-x)**(4/3)), /\ 
-f16(x) w l lw 4 t "f1(x) = (-x)^(1/1)"
-g16(x) w l lw 4 t "f2(x) = (-x)^(1/2)"
-f16(x) w l lw 4 t "f2(x) = (-x)^(1/2)"
-g16(x) w l lw 4 t "f3(x) = (-x)^(1/3)"
-f16(x) w l lw 4 t "f3(x) = (-x)^(1/3)"
-g16(x) w l lw 4 t "f4(x) = (-x)^(1/4)"
-f16(x) w l lw 4 t "f4(x) = (-x)^(1/4)"
-g16(x) w l lw 4 t "f5(x) = (-x)^(2/1)"
-f16(x) w l lw 4 t "f5(x) = (-x)^(2/1)"
-g16(x) w l lw 4 t "f6(x) = (-x)^(2/2)"
-f16(x) w l lw 4 t "f6(x) = (-x)^(2/2)"
-g16(x) w l lw 4 t "f7(x) = (-x)^(2/3)"
-f16(x) w l lw 4 t "f7(x) = (-x)^(2/3)"
-g16(x) w l lw 4 t "f8(x) = (-x)^(2/4)"
-f16(x) w l lw 4 t "f8(x) = (-x)^(2/4)"
-g16(x) w l lw 4 t "f9(x) = (-x)^(3/1)"
-f16(x) w l lw 4 t "f9(x) = (-x)^(3/1)"
-g16(x) w l lw 4 t "f10(x) = (-x)^(3/2)"
-f16(x) w l lw 4 t "f10(x) = (-x)^(3/2)"
-g16(x) w l lw 4 t "f11(x) = (-x)^(3/3)"
-f16(x) w l lw 4 t "f11(x) = (-x)^(3/3)"
-g16(x) w l lw 4 t "f12(x) = (-x)^(3/4)"
-f16(x) w l lw 4 t "f12(x) = (-x)^(3/4)"
-g16(x) w l lw 4 t "f13(x) = (-x)^(4/1)"
-f16(x) w l lw 4 t "f13(x) = (-x)^(4/1)"
-g16(x) w l lw 4 t "f14(x) = (-x)^(4/2)"
-f16(x) w l lw 4 t "f14(x) = (-x)^(4/2)"
-g16(x) w l lw 4 t "f15(x) = (-x)^(4/3)"
-f16(x) w l lw 4 t "f15(x) = (-x)^(4/3)"
-g16(x) w l lw 4 t "g15(x) = ((-x)^(4/3))"
-f16(x) w l lw 4 t "g15(x) = ((-x)^(4/3))"
+f1(x) = (-x)**(1/1)
+g1(x) = -((-x)**(1/1))
+f2(x) = (-x)**(2/1)
+g2(x) = -((-x)**(2/1))
+f3(x) = (-x)**(3/1)
+g3(x) = -((-x)**(3/1))
+f4(x) = (-x)**(4/1)
+g4(x) = -((-x)**(4/1))
+f5(x) = (-x)**(1/2)
+g5(x) = -((-x)**(1/2))
+f6(x) = (-x)**(2/2)
+g6(x) = -((-x)**(2/2))
+f7(x) = (-x)**(3/2)
+g7(x) = -((-x)**(3/2))
+f8(x) = (-x)**(4/2)
+g8(x) = -((-x)**(4/2))
+f9(x) = (-x)**(1/3)
+g9(x) = -((-x)**(1/3))
+f10(x) = (-x)**(2/3)
+g10(x) = -((-x)**(2/3))
+f11(x) = (-x)**(3/3)
+g11(x) = -((-x)**(3/3))
+f12(x) = (-x)**(4/3)
+g12(x) = -((-x)**(4/3))
+f13(x) = (-x)**(1/4)
+g13(x) = -((-x)**(1/4))
+f14(x) = (-x)**(2/4)
+g14(x) = -((-x)**(2/4))
+f15(x) = (-x)**(3/4)
+g15(x) = -((-x)**(3/4))
+f16(x) = (-x)**(4/4)
+g16(x) = -((-x)**(4/4))
+        f1(x) w l lw 4 lc rgb "#DF0000" t "y^1 + x^1 = 0", \
+        g1(x) w l lw 4 lc rgb "#BF0000" notitle, \
+        f2(x) w l lw 4 lc rgb "#BF0000" t "y^1 + x^2 = 0", \
+        g2(x) w l lw 4 lc rgb "#9F0000" notitle, \
+        f3(x) w l lw 4 lc rgb "#9F0000" t "y^1 + x^3 = 0", \
+        g3(x) w l lw 4 lc rgb "#7F0000" notitle, \
+        f4(x) w l lw 4 lc rgb "#7F0000" t "y^1 + x^4 = 0", \
+        g4(x) w l lw 4 lc rgb "#5F0000" notitle, \
+        f5(x) w l lw 4 lc rgb "#5F0000" t "y^2 + x^1 = 0", \
+        g5(x) w l lw 4 lc rgb "#3F0000" notitle, \
+        f6(x) w l lw 4 lc rgb "#3F0000" t "y^2 + x^2 = 0", \
+        g6(x) w l lw 4 lc rgb "#1F0000" notitle, \
+        f7(x) w l lw 4 lc rgb "#1F0000" t "y^2 + x^3 = 0", \
+        g7(x) w l lw 4 lc rgb "#00FF00" notitle, \
+        f8(x) w l lw 4 lc rgb "#00FF00" t "y^2 + x^4 = 0", \
+        g8(x) w l lw 4 lc rgb "#00DF00" notitle, \
+        f9(x) w l lw 4 lc rgb "#00DF00" t "y^3 + x^1 = 0", \
+        g9(x) w l lw 4 lc rgb "#00BF00" notitle, \
+        f10(x) w l lw 4 lc rgb "#00BF00" t "y^3 + x^2 = 0", \
+        g10(x) w l lw 4 lc rgb "#009F00" notitle, \
+        f11(x) w l lw 4 lc rgb "#009F00" t "y^3 + x^3 = 0", \
+        g11(x) w l lw 4 lc rgb "#007F00" notitle, \
+        f12(x) w l lw 4 lc rgb "#007F00" t "y^3 + x^4 = 0", \
+        g12(x) w l lw 4 lc rgb "#005F00" notitle, \
+        f13(x) w l lw 4 lc rgb "#005F00" t "y^4 + x^1 = 0", \
+        g13(x) w l lw 4 lc rgb "#003F00" notitle, \
+        f14(x) w l lw 4 lc rgb "#003F00" t "y^4 + x^2 = 0", \
+        g14(x) w l lw 4 lc rgb "#001F00" notitle, \
+        f15(x) w l lw 4 lc rgb "#001F00" t "y^4 + x^3 = 0", \
+        g15(x) w l lw 4 lc rgb "#0000FF" notitle, \
+        f16(x) w l lw 4 lc rgb "#0000FF" t "y^4 + x^4 = 0", \
+        g16(x) w l lw 4 lc rgb "#0000DF" notitle, \

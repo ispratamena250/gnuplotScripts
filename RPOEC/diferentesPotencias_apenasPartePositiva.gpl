@@ -1,0 +1,44 @@
+#Diferenças gráficas em polinômios reais com apenas dois monômios
+
+set xrange [-5:5]
+set yrange [-5:5]
+set xlabel "x"
+set ylabel "f(x)"
+set title "Exemplos de diferenças"
+set xzeroaxis
+set yzeroaxis
+set size square
+
+f1(x) = (-x)**(1/1)
+f2(x) = (-x)**(2/1)
+f3(x) = (-x)**(3/1)
+f4(x) = (-x)**(4/1)
+f5(x) = -abs(x)**(1./2.)
+f6(x) = abs(x)
+f7(x) = -abs(x)**(3./2.)
+f8(x) = abs(x)**2
+f9(x) = -abs(x)**(1./3.)
+f10(x) = abs(x)**(2./3.)
+f11(x) = -x
+f12(x) = abs(x)**(4./3.)
+f13(x) = -abs(x)**(1./4.)
+f14(x) = abs(x)**(1./2.)
+f15(x) = -abs(x)**(3./4.)
+f16(x) = abs(x)
+
+plot f1(x) w l lw 4 lc rgb "#DF0000" t "y^1 + x^1 = 0", \
+        f2(x) w l lw 4 lc rgb "#BF0000" t "y^1 + x^2 = 0", \
+        f3(x) w l lw 4 lc rgb "#9F0000" t "y^1 + x^3 = 0", \
+        f4(x) w l lw 4 lc rgb "#7F0000" t "y^1 + x^4 = 0", \
+        f5(x) w l lw 4 lc rgb "#5F0000" t "y^2 + x^1 = 0", \
+        f6(x) w l lw 4 lc rgb "#3F0000" t "y^2 + x^2 = 0", \
+        f7(x) w l lw 4 lc rgb "#1F0000" t "y^2 + x^3 = 0", \
+        f8(x) w l lw 4 lc rgb "#00FF00" t "y^2 + x^4 = 0", \
+        f9(x) w l lw 4 lc rgb "#00DF00" t "y^3 + x^1 = 0", \
+        f10(x) w l lw 4 lc rgb "#00BF00" t "y^3 + x^2 = 0", \
+        f11(x) w l lw 4 lc rgb "#009F00" t "y^3 + x^3 = 0", \
+        f12(x) w l lw 4 lc rgb "#007F00" t "y^3 + x^4 = 0", \
+        f13(x) w l lw 4 lc rgb "#005F00" t "y^4 + x^1 = 0", \
+        f14(x) w l lw 4 lc rgb "#003F00" t "y^4 + x^2 = 0", \
+        f15(x) w l lw 4 lc rgb "#001F00" t "y^4 + x^3 = 0", \
+        f16(x) w l lw 4 lc rgb "#0000FF" t "y^4 + x^4 = 0"
