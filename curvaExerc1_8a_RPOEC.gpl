@@ -1,0 +1,17 @@
+#Scrpit para curva q = (x^2+1)/(5^k) com k >= 1
+
+set xlabel "x"
+set ylabel "q(x)"
+set xzeroaxis
+set yzeroaxis
+
+set title "Curva q(x) = (x**2 + 1)/(5**k), k >= 1"
+
+k = 2
+q1(x) = (x**2 + 1)/(5**k)
+
+l = 3
+q2(x) = (x**2 + 1)/(5**l)
+
+plot q1(x) w l lw 4 title sprintf("q1(x) = (x**2 + 1)/(5**%d)", k), \
+	q2(x) w l lw 4 title sprintf("q2(x) = (x**2 + 1)/(5**%d)", l)
