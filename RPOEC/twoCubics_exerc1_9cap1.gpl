@@ -1,0 +1,24 @@
+#Script para as cúbicas x^3 + 2y^3- x - 2y = 0 & 2x^3 - y^3 - 2x + y = 0
+
+set xlabel "(x, y)"
+set ylabel "F(x, y)"
+set xrange [-5:5]
+set yrange [-5:5]
+set xzeroaxis
+set yzeroaxis
+set title "Curvas c1(x, y) = x^3 + 2y^3 - x - 2*y e c2(x, y) = 2x^3 - y^3 - 2x + y"
+
+set contour base
+set cntrparam levels discrete 0
+
+unset surface
+set view map
+set size ratio -1
+set isosamples 1000, 1000
+
+splot x**3 + 2*y**3 - x - 2*y lw 4, \
+	2*x**3 - y**3 - 2*x + y lw 4, \
+	y**3 - y + 8*x**3 - 8*x
+	#3*x**3 + y**3 - 3*x - y, \
+	#300*x**3 + 100*y**3 - 300*x - 100*y lw 6, \
+	#-x**3 + 3*y**3 + x - 3*y, \
