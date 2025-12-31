@@ -1,0 +1,18 @@
+#Guia para plotar curvas implícita. Exemplo: folha de Descastes
+
+set xlabel "(x, y)"
+set ylabel "F(x, y)"
+set xzeroaxis
+set yzeroaxis
+set title "Folha de Descartes"
+
+set contour base
+set cntrparam levels discrete 0
+
+unset surface
+set view map
+set size ratio -1
+set isosamples 1000,1000
+
+a = 1
+splot x**3 + y**3 - 3*a*x*y lw 4
